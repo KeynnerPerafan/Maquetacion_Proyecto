@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Reporte</title>
+    <link rel="stylesheet" href="../assents/css/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assents/css/all.min.css">
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(8, 58, 35), rgba(10, 66, 40, 0.8));
+            width: 1200px;
+            height: 600px;
+        }
+
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #4CAF50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .menu-vertical .icon {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .container-content {
+            margin-right: 100px;
+            padding: 20px;
+        }
+
+        .row-content {
+            display: flex;
+            justify-content: space-between;
+            /* Distribuir el contenido en dos partes */
+        }
+
+        .profile-box,
+        .info-box {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+        }
+
+        .profile-box {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .profile-box img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .info-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+        }
+
+        .urgent-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .accordion .card-header {
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 0;
+            background-color: #4CAF50;
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        .accordion .card-header h2 button {
+            color: white;
+            text-decoration: none;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 20px;
+            width: 200px;
+            /* Definir un tamaño fijo para los botones */
+        }
+
+        .button-container button {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .colorp {
+            background-color: #4CAF50;
+        }
+
+        .text-center {
+            color: blanchedalmond;
+            margin: 10px;
+            text-align: center;
+            position: relative;
+            left: -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <br>
+        <h1 class="mb-4">Información del Reporte</h1>
+    </div>
+
+    <div class="container-content">
+        <div class="accordion" id="informationAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Danyeli Sanchez
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#informationAccordion">
+                    <div class="card-body">
+                        <div class="row-content">
+                            <div class="profile-box">
+                                <img src="https://via.placeholder.com/100" alt="Profile Picture">
+                                <div>
+                                    <h3>Danyeli Sanchez Campo</h3>
+                                    <p><strong>Número de ficha:</strong> 2923603</p>
+                                    <p><strong>Número de contacto:</strong> 312-444-684</p>
+                                    <p><strong>Programa de formación:</strong> Análisis y desarrollo de software (ADSO)
+                                    </p>
+                                    <p><strong>Correo electrónico:</strong> danyelisanchezc@gmail.com</p>
+                                    <p><strong>Correo institucional:</strong> danyeli.sanchezc@sena.edu.co</p>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <div>
+                                    <h3>Acerca del reporte</h3>
+                                    <p><strong>Instructor:</strong> Jefferson Muñoz</p>
+                                    <p><strong>Competencia:</strong> Algoritmia</p>
+                                    <p><strong>Característica del informe:</strong> Convivencial</p>
+                                    <p><strong>Descripción:</strong> El aprendiz tiene una inasistencia de 5 clases
+                                        seguidas sin justificar.</p>
+                                </div>
+                                <button class="urgent-button">Reporte de tipo: Urgente</button>
+                            </div>
+
+                            <!-- Aquí los botones ahora están al lado derecho -->
+                            <div class="button-container">
+                                <button class="btn btn-success colorp">Historial de Reportes</button>
+                                <button class="btn btn-success colorp">Información de la Ficha</button>
+                                <button class="btn btn-success colorp">Notificaciones</button>
+                                <button class="btn btn-success colorp">Inicio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+</body>
+
+</html>

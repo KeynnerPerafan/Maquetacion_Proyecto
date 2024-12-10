@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../assents/css/Bootstrap/docs.css" rel="stylesheet">
+    <title>inicio</title>
+    <script src="../assents/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .fondodepagina {
+            background: linear-gradient(#064E3B, #52E39A);
+            opacity: 1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+            width: 100%;
+            min-height: 140vh;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .menu-lateral {
+            top: 80px;
+            right: 40px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            background-color: #d3d3d3;
+            border-radius: 15px;
+            position: absolute;
+            width: 150px;
+            height: 500px;
+
+        }
+
+        .menu-lateral .btn {
+            position: relative;
+            height: 100px;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 10px;
+            box-shadow: 5px 5px 5px rgb(148, 148, 148);
+            border-style: outset;
+        }
+
+        .contenido {
+            margin-right: 200px;
+            margin-left: 0px;
+        }
+
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #C6D6D2;
+
+        }
+
+        .altura {
+            position: absolute;
+            top: 10px;
+            border-radius: 20px 200px 20px 20px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            ;
+        }
+
+        .t1 {
+            font-size: 20px;
+            position: relative;
+            left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .p {
+            position: absolute;
+            bottom: 10px;
+            left: 30px;
+            font-size: 20px;
+            color: black;
+        }
+
+        .p2 {
+            display: contents center;
+            position: absolute;
+            bottom: 5px;
+            color: black;
+        }
+
+        .p3 {
+            position: absolute;
+            left: 30px;
+            bottom: 10px;
+            color: black;
+        }
+
+        .img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .igm {
+            width: 50px;
+            padding: 5px;
+        }
+        .perfil{
+            position: relative;
+            right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondodepagina">
+        <div class="container-md d-flex justify-content-end align-items-center py-2 icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                class="bi bi-person-circle fs-1 perfil" viewBox="0 0 16 16">
+                <a href="perfil.html">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </a>
+            </svg>
+        </div>
+        <div class="bg-white py-5 px-4 shadow altura"
+            style="width: 70%; margin-left: 2.5rem;margin-top :30px; min-height: 90vh;">
+            <h1 class="t1 text-uppercase fw-bold">Página de inicio</h1>
+            <div class="row mb-5 justify-content-center">
+                <div class="col-12 col-md-3">
+
+                    <a href="actividades.html">
+                        <div class="card" style="height: 200px;border: none;">
+
+                            <div class="p-3 text-center p">
+                                <div>
+                                    <img src="../assents/img/actividad.png" alt="" class="img">
+                                </div>
+                                <div>
+                                    <p>ACTIVIDADES</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <a href="asistencia.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center text-black p2">
+                                <div><img src="../assents/img/ausencia.png" alt="" class="img"></div>
+                                <div>
+                                    <p>FALTAS POR ASISTENCIA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a href="registroAsistencia.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center p">
+                                <div><img src="../assents/img/asistemcias.png" alt="" class="img"></div>Historial de
+                                asistencia
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-3">
+
+                    <a href="desempeño.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center p3">
+
+
+                                <div><img src="../assents/img/desarrollo.png" alt="" class="img">
+                                </div>
+                                <div>
+                                    <p>TU DESEMPEÑO</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a href="banco.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center p2">
+                                <div>
+                                    <img src="../assents/img/uniforme.png" alt="" class="img">
+                                </div>
+                                <div>
+                                    <p>BANCO DE UNIFORMES</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="menu-lateral bg-light p-3">
+            <div class="text-center mb-4"></div>
+            <ul class="list-unstyled">
+                <li><a href="notificaciones.html">
+                    <button class="btn btn-light w-100 mb-2"><div><img src="../assents/img/notificacion.png" alt="" class="igm"></div>Notificaciones</button>
+                </a></li>
+
+                <li><a href="bienestar.html">
+                    <button class="btn btn-light w-100 mb-2"><div><img src="../assents/img/bienestar.png" alt="" class="igm"></div> bienestar</button>
+                </a></li>
+
+                <li><a href="donacion.html">
+                    <button class="btn btn-light w-100 mb-2"><div><img src="../assents/img/donacion.png" alt="" class="igm"></div>Donación</button>
+                </a></li>
+
+                <li><a href="formulario.html">
+                    <button class="btn btn-light w-100 mb-2"><div><img src="../assents/img/encuesta-online.png" alt="" class="igm"></div>Encuesta</button>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

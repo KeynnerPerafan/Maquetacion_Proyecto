@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendices Información</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            z-index: 1;
+        }
+        .menu-vertical .icon {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 100px;
+            padding: 20px;
+        }
+        .apprentice-item {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+        }
+        .apprentice-item:hover {
+            background-color: #e9ecef;
+        }
+        .details-box {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+        .details-box h2 {
+            margin-top: 0;
+        }
+        .details-box button {
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function showApprenticeDetails(name, contact, program, email, status, age) {
+            const detailsBox = document.getElementById('details-box');
+            detailsBox.style.display = 'block';
+            document.getElementById('apprentice-name').textContent = name;
+            document.getElementById('apprentice-contact').textContent = 'Número de contacto: ' + contact;
+            document.getElementById('apprentice-program').textContent = 'Programa de formación: ' + program;
+            document.getElementById('apprentice-email').textContent = 'Correo: ' + email;
+            document.getElementById('apprentice-status').textContent = 'Estado del aprendiz: ' + status;
+            document.getElementById('apprentice-age').textContent = 'Edad: ' + age + ' años';
+        }
+    </script>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-history icon"></i>
+        <i class="fas fa-info-circle icon"></i>
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-home icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">Aprendices Información del aprendiz</h1>
+        </div>
+        <div class="apprentice-item" onclick="showApprenticeDetails('Danyell Sanchez Campo', '321-446-684', 'Análisis y desarrollo de software (ADSO)', 'danyell.sanchez@gmail.com', 'Alerta', 18)">Danyell Sanchez Campo</div>
+        <div class="apprentice-item" onclick="showApprenticeDetails('Valentina Cuarán Díaz', '321-446-685', 'Análisis y desarrollo de software (ADSO)', 'valentina.cuaran@gmail.com', 'Normal', 19)">Valentina Cuarán Díaz</div>
+        <div class="apprentice-item" onclick="showApprenticeDetails('Andrés Sarria Nerry', '321-446-686', 'Análisis y desarrollo de software (ADSO)', 'andres.sarria@gmail.com', 'Normal', 20)">Andrés Sarria Nerry</div>
+        
+        <div id="details-box" class="details-box">
+            <h2 id="apprentice-name"></h2>
+            <p id="apprentice-contact"></p>
+            <p id="apprentice-program"></p>
+            <p id="apprentice-email"></p>
+            <p id="apprentice-status"></p>
+            <p id="apprentice-age"></p>
+            <button class="btn btn-light">Hacer reporte</button>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

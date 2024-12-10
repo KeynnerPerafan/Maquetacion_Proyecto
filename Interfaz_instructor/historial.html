@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Mensual de Asistencia</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(8, 58, 35), rgba(10, 66, 40, 0.8));
+            width: 1000px;
+            height: 600px;
+        }
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            z-index: 1;
+        }
+        .menu-vertical .icon {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 120px;
+            padding: 20px;
+        }
+        .calendar {
+            width: 100%;
+        }
+        .day {
+            width: 14.28%;
+            height: 100px;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .header {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+        .day.green { background-color: #c8e6c9; }
+        .day.yellow { background-color: #fff9c4; }
+        .day.red { background-color: #ffcdd2; }
+        .legend {
+            margin-top: 20px;
+        }
+        .legend .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .legend .color-box {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .color-green { background-color: #c8e6c9; }
+        .color-yellow { background-color: #fff9c4; }
+        .color-red { background-color: #ffcdd2; }
+    </style>
+    <script>
+        function changeColor(element) {
+            if (element.classList.contains('green')) {
+                element.classList.remove('green');
+                element.classList.add('yellow');
+            } else if (element.classList.contains('yellow')) {
+                element.classList.remove('yellow');
+                element.classList.add('red');
+            } else if (element.classList.contains('red')) {
+                element.classList.remove('red');
+            } else {
+                element.classList.add('green');
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-info-circle icon"></i>
+        <i class="fas fa-user-circle icon"></i>
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-home icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">Calendario Mensual de Asistencia</h1>
+        </div>
+        <div class="calendar mb-4">
+            <div class="row">
+                <div class="col header">Dom</div>
+                <div class="col header">Lun</div>
+                <div class="col header">Mar</div>
+                <div class="col header">Mié</div>
+                <div class="col header">Jue</div>
+                <div class="col header">Vie</div>
+                <div class="col header">Sáb</div>
+            </div>
+            <div class="row">
+                <div class="col day" onclick="changeColor(this)">1</div>
+                <div class="col day" onclick="changeColor(this)">2</div>
+                <div class="col day" onclick="changeColor(this)">3</div>
+                <div class="col day" onclick="changeColor(this)">4</div>
+                <div class="col day" onclick="changeColor(this)">5</div>
+                <div class="col day" onclick="changeColor(this)">6</div>
+                <div class="col day" onclick="changeColor(this)">7</div>
+            </div>
+            <div class="row">
+                <div class="col day" onclick="changeColor(this)">8</div>
+                <div class="col day" onclick="changeColor(this)">9</div>
+                <div class="col day" onclick="changeColor(this)">10</div>
+                <div class="col day" onclick="changeColor(this)">11</div>
+                <div class="col day" onclick="changeColor(this)">12</div>
+                <div class="col day" onclick="changeColor(this)">13</div>
+                <div class="col day" onclick="changeColor(this)">14</div>
+            </div>
+            <div class="row">
+                <div class="col day" onclick="changeColor(this)">15</div>
+                <div class="col day" onclick="changeColor(this)">16</div>
+                <div class="col day" onclick="changeColor(this)">17</div>
+                <div class="col day" onclick="changeColor(this)">18</div>
+                <div class="col day" onclick="changeColor(this)">19</div>
+                <div class="col day" onclick="changeColor(this)">20</div>
+                <div class="col day" onclick="changeColor(this)">21</div>
+            </div>
+            <div class="row">
+                <div class="col day" onclick="changeColor(this)">22</div>
+                <div class="col day" onclick="changeColor(this)">23</div>
+                <div class="col day" onclick="changeColor(this)">24</div>
+                <div class="col day" onclick="changeColor(this)">25</div>
+                <div class="col day" onclick="changeColor(this)">26</div>
+                <div class="col day" onclick="changeColor(this)">27</div>
+                <div class="col day" onclick="changeColor(this)">28</div>
+            </div>
+            <div class="row">
+                <div class="col day" onclick="changeColor(this)">29</div>
+                <div class="col day" onclick="changeColor(this)">30</div>
+                <div class="col day" onclick="changeColor(this)">31</div>
+            </div>
+        </div>
+        <div class="legend">
+            <div class="item">
+                <div class="color-box color-green"></div>
+                <span>Falta de media jornada</span>
+            </div>
+            <div class="item">
+                <div class="color-box color-yellow"></div>
+                <span>Falta de media jornada</span>
+            </div>
+            <div class="item">
+                <div class="color-box color-red"></div>
+                <span>Falta de jornada completa</span>
+            </div>
+        </div>
+        <div class="text-right">
+            <button class="btn btn-outline-primary"><i class="fas fa-calendar"></i> Registro y asistencia</button>
+            <button class="btn btn-outline-secondary"><i class="fas fa-bell"></i> Información de la ficha</button>
+            <button class="btn btn-outline-success"><i class="fas fa-home"></i> Inicio</button>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

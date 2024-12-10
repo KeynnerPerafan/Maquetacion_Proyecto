@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Rol</title>
+    <link rel="stylesheet" href="../assents/css/Bootstrap/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(8, 58, 35), rgba(10, 66, 40, 0.8));
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 128, 1, 0.8);
+            box-shadow: 0px 0px 10px 10px #fff;
+            border-radius: 20px;
+            width: 400px;
+            padding: 20px;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Quién eres?</h1>
+        <button type="button" class="btn btn-primary" onclick="location.href='../Interfaz_aprendiz/formulario.html';">Aprendiz</button>
+        <button type="button" class="btn btn-success" onclick="location.href='../Interfaz_instructor/interfaz.html';">Instructor</button>
+        <button type="button" class="btn btn-warning" onclick="location.href='../Interfaz_bienestar/interfaz.html';">Cuerpo de Bienestar</button>
+        <button type="button" class="btn btn-danger" onclick="location.href='../Interfaz_coordinacion/menuCoordi.html';">Coordinador Académico</button>
+    </div>
+
+    <script src="../assents/js/bootstrap.min.js"></script>
+</body>
+</html>

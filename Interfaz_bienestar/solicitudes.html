@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Solicitudes</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+       body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+        .cir{
+            border-radius: 0 100px 0 0;
+        }
+        .card-header{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgb(39, 163, 45) 0%, rgb(9, 121, 52) 35%, rgba(0,212,255,0) 100%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class ="container mt-5 ">
+        <div class="card cir">
+            <div class="card-header text-white titulo-degrado">
+                <h3>Gestión de Solicitudes</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Nombre Aprendiz</th>
+                            <th>Solicitud</th>
+                            <th>Nivel de Riesgo</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daniel Perez</td>
+                            <td>Beca de Sostenimiento</td>
+                            <td class="bg-danger text-white">Alto</td>
+                            <td>
+                                <button class="btn btn-success">Aceptar</button>
+                                <button class="btn btn-danger">Rechazar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Valentina Cuaran</td>
+                            <td>Monitoria Académica</td>
+                            <td class="bg-warning text-white">Moderado</td>
+                            <td>
+                                <button class="btn btn-success">Aceptar</button>
+                                <button class="btn btn-danger">Rechazar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Andres Sarria</td>
+                            <td>Beca de Sostenimiento</td>
+                            <td class="bg-success text-white">Bajo</td>
+                            <td>
+                                <button class="btn btn-success">Aceptar</button>
+                                <button class="btn btn-danger">Rechazar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Andres Perafan</td>
+                            <td>Monitoria Académica</td>
+                            <td class="bg-warning text-white">Moderado</td>
+                            <td>
+                                <button class="btn btn-success">Aceptar</button>
+                                <button class="btn btn-danger">Rechazar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+    <nav class="menu-lateral bg-light p-3">
+        <div class="text-center mb-4"></div>
+        <ul class="list-unstyled">
+          <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+        </ul>
+      </nav>
+    <script src="../assents/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

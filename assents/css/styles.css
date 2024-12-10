@@ -1,0 +1,50 @@
+.fondodepagina {
+    background: linear-gradient(#064E3B, #52E39A);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 140vh;
+justify-content: center;
+align-items: flex-end;
+}
+.menu-lateral {
+width: 150px;
+min-height: calc(100vh - 50px); /* Resta 20px del alto total para el espacio superior e inferior */
+position: fixed;
+top: 80px; 
+right: 40px;
+box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+background-color: #ffffff;
+border-radius: 15px; 
+}
+
+.menu-lateral .btn {
+    text-align: left;
+    font-size: 16px;
+}
+
+.contenido {
+margin-right: 200px;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+
+.input-group .input-group-text {
+    background-color: #CAE6D0;
+    border: none;
+}
+

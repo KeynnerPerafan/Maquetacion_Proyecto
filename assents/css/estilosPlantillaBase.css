@@ -1,0 +1,47 @@
+/* Asegura que el menú lateral esté fijo al lado derecho */
+.fondodepagina {
+    background: linear-gradient(#064E3B, #52E39A);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 140vh; /* Mínimo 100% de la altura visible, pero se expande con el contenido */
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .menu-lateral {
+    width: 150px;
+    min-height: calc(100vh - 50px); /* Resta 20px del alto total para el espacio superior e inferior */
+    position: fixed;
+    top: 80px; /* Espacio desde la parte superior */
+    right: 40px; /* Espacio desde la parte derecha */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 15px; /* Redondea todas las esquinas */
+}
+
+/* Estilo de los botones del menú */
+.menu-lateral .btn {
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Margen derecho para el contenido, para no solaparse con el menú */
+.contenido {
+    margin-right: 200px;
+    margin-left: 0px; /* Espacio para el ancho del menú */
+}
+
+/* Estilo para las cards */
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+.titulo-card {
+    margin-top: 15px; /* Ajusta este valor según lo necesites */
+    font-size: 1rem;
+    text-align: center;
+}

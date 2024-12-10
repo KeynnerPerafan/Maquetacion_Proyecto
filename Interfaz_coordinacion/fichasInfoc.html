@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="../assents/css/Bootstrap/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assents/css/estilosPlantillaBase.css">
+        <title>Competencias</title>
+        <style>
+          .hidden {
+            display: none;
+          }
+        </style>
+  <body >
+    
+       <!-- Contenedor con fondo degradado -->
+    <div class="fondodepagina">
+        
+        <!-- Contenedor perfil -->
+        <div class="container-md d-flex justify-content-end align-items-center py-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" style="color: #98C15D"; class="bi bi-person-circle fs-1" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+      </div>    
+      
+      
+      
+      <!-- Caja de Fichas -->
+     
+           <div class="bg-white py-5 px-4 rounded-4 shadow" style="width: 95%; margin-left: 2.5rem;margin-top :10px; min-height: 70vh;">
+            <!-- Títulos antes del contenedor blanco alineados con el contenedor -->
+            <div class="container-md d-flex align-items-center mb-3" style="width: 70%; margin-left: 2.5rem;margin-top :0px">
+              <h1 style="color: black; margin-right: 20px;">Información </h1>
+              <h2 style="color: #98C15D;">Fichas</h2>
+            </div>
+            <!-- Contenedor de filas y columnas -->
+  <div class="card" style="background-color: #98C15D; border: none; width: 80%; margin-left: 2.5rem; margin-top: 10px; min-height: 90vh;">
+    <div class="row h-100 p-4">
+      
+      <!-- Primera fila: Competencias -->
+      
+      <div class="card p-3 bg-light">
+        <div class="row align-items-center">
+          <!-- Primera columna: Competencias -->
+          <div class="col-md-4">
+            <h3 class="text-dark">Trimeste</h3>
+          </div>
+          <!-- Segunda columna: Seleccionar competencias -->
+          <div class="col-md-8">
+            <select id="competenciasSelect" class="form-select">
+                <option value="">Seleccione una opción</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+        </div>
+      </div>
+      
+      <!-- Contenedores de nombres -->
+          <div id="fichascontainer" class="mt-4 hidden">
+            <div class="card mb-3 p-3 bg-light">
+              <p onclick="toggleInfo(this, 'Ficha 2923605')">Ficha 2923605 </p>
+              <div class="info hidden p-2 bg-light border rounded">
+                <div class="details">
+                  <div class="card mb-4 card-custom">
+                    <div class="card-header header-custom text-center">
+                        <h3>Información principal</h3>
+                      </div>
+                      <div class="card-body">
+                        <p>Muestra la info de la ficha.</p>
+                      </div>
+                    </div>
+                    <div class="card mb-4 card-custom">
+                      <div class="card-header header-custom text-center">
+                        <h3>Aprendices</h3>
+                  </div>
+                  <div class="card-body">
+                      <!-- Tabla de aprendices -->
+                      <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Nombre</th>
+                              <th>Código</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                  <td>Juan Pérez</td>
+                                  <td>001</td>
+                              </tr>
+                              <tr>
+                                <td>Laura Gómez</td>
+                                <td>002</td>
+                              </tr>
+                              <tr>
+                                <td>Pedro Martínez</td>
+                                <td>003</td>
+                              </tr>
+                              <tr>
+                                  <td>María López</td>
+                                  <td>004</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>
+              </div>
+              
+                <div class="card mb-4 card-custom">
+                    <div class="card-header header-custom text-center">
+                        <h3>Reportes de los Aprendices</h3>
+                    </div>
+                    <div class="card-body">
+                      <p>Permite ver reportes relacionados con los aprendices de esta ficha.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+    </div>
+  </div>
+  </div>
+
+        
+        <!-- Menú Lateral -->
+        <nav class="menu-lateral bg-light p-3">
+            <div class="text-center mb-4">
+              
+            </div>
+            <ul class="list-unstyled">
+              <li>
+                <a href="menuCoordi.html" class="btn btn-light w-100 mb-2">Inicio</a>
+              </li>
+              <li>
+                <a href="agregarFichas.html" class="btn btn-light w-100 mb-2">Agregar ficha</a>
+            </li>
+            <a href="asistenciaHistorial.html" class="btn btn-light w-100 mb-2">Historial de asistencia</a>
+          </li>
+            <li>
+                <a href="notificacionesC.html" class="btn btn-light w-100 mb-2">Notificaciones</a>
+            </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <script>
+        const competenciasSelect = document.getElementById("competenciasSelect");
+        const fichascontainer = document.getElementById("fichascontainer");
+        
+        competenciasSelect.addEventListener("change", function() {
+          if (competenciasSelect.value === "1") {
+            fichascontainer.classList.remove("hidden");
+          } else {
+            fichascontainer.classList.add("hidden");
+          }
+        });
+        
+        function toggleInfo(element, nombre) {
+          const info = element.nextElementSibling;
+          if (info.classList.contains("hidden")) {
+            info.classList.remove("hidden");
+          } else {
+            info.classList.add("hidden");
+          }
+        }
+        </script>
+        <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

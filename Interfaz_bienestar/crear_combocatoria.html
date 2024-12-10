@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../assents/css/Bootstrap/docs.css" rel="stylesheet">
+    <title>Crear convocatoria</title>
+    <style>
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+      .container {
+        max-width: 800px;
+          margin-top: 50px;
+        }
+        .card {
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+          background-color: #4CAF50;
+          color: white;
+          font-weight: bold;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+        .card-body {
+          padding: 30px;
+        }
+        .form-control {
+          border-radius: 5px;
+        }
+        .btn {
+          border-radius: 5px;
+        }
+        .form-group {
+          margin-bottom: 20px;
+        }
+        label {
+          font-weight: bold;
+        }
+      </style>
+</head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">Convocatoria - Crear o Modificar</div>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="titulo">Título</label>
+                      <input type="text" class="form-control" id="titulo" placeholder="Escriba un título de la convocatoria">
+                    </div>
+                    <div class="form-group">
+                      <label for="descripcion">Descripción</label>
+                      <textarea class="form-control" id="descripcion" rows="5" placeholder="Escriba una descripción detallada de la convocatoria"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="fechaInicio">Fecha de Inicio</label>
+                      <input type="date" class="form-control" id="fechaInicio">
+                    </div>
+                    <div class="form-group">
+                      <label for="fechaFin">Fecha de Fin</label>
+                      <input type="date" class="form-control" id="fechaFin">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <nav class="menu-lateral bg-light p-3">
+              <div class="text-center mb-4"></div>
+              <ul class="list-unstyled">
+                <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+              </ul>
+            </nav>
+          <script src="../assents/js/bootstrap.bundle.min.js"></script>
+        </body>
+        </html>

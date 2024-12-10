@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de la Ficha</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            z-index: 1;
+        }
+        .menu-vertical .icon {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 120px;
+            padding: 20px;
+        }
+        .info-box {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .info-box h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-history icon"></i>
+        <i class="fas fa-user-check icon"></i>
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-home icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">Información de la Ficha</h1>
+        </div>
+        <div class="info-box">
+            <h2>Ficha: 2392602</h2>
+            <p><strong>Líder de ficha:</strong> Anne Valentina Narvaez</p>
+            <p><strong>Aprendices:</strong> 25</p>
+            <p><strong>Competencia:</strong> Fundamentos del desarrollo</p>
+            <p><strong>Duración de la competencia:</strong> 1 trimestre</p>
+        </div>
+        <div class="text-right mt-4">
+            <button class="btn btn-outline-primary"><i class="fas fa-history"></i> Historial de asistencia</button>
+            <button class="btn btn-outline-secondary"><i class="fas fa-user-check"></i> Registrar asistencia</button>
+            <button class="btn btn-outline-warning"><i class="fas fa-bell"></i> Notificaciones</button>
+            <button class="btn btn-outline-success"><i class="fas fa-home"></i> Inicio</button>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

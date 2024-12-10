@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../assents/css/Bootstrap/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assents/css/estilosPlantillaBase.css" >
+    <title>Bootstrap Example</title>
+</head>
+<body >
+    
+    <!-- Contenedor con fondo degradado -->
+    <div class="fondodepagina">
+        
+        <!-- Contenedor perfil -->
+        <div class="container-md d-flex justify-content-end align-items-center py-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" style="color: #98C15D"; class="bi bi-person-circle fs-1" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+        </div>    
+        
+        
+            <!-- Caja de Fichas -->
+     
+           <div class="bg-white py-5 px-4 rounded-4 shadow" style="width: 95%; margin-left: 2.5rem;margin-top :10px; min-height: 70vh;">
+               <!-- Títulos antes del contenedor blanco alineados con el contenedor -->
+               <div class="container-md d-flex align-items-center mb-3" style="width: 70%; margin-left: 2.5rem;margin-top :0px">
+                   <h1 style="color: black; margin-right: 20px;">
+                       Desempeño academico del aprendiz </h1>
+                       <h2 style="color: #98C15D;">Coordinador</h2>
+                    </div>
+                    <!-- Contenedor de filas y columnas -->
+                    <div class="card" style="background-color: #98C15D; border: none; width: 80%; margin-left: 2.5rem; margin-top: 10px; min-height: 90vh;">
+                        
+                        
+                        <div class="bg-white py-5 px-4 rounded-4 shadow"style="width: 90%; margin-left: 1rem;margin-top :30px; min-height: 80vh;">
+                            <div class="row h-100 p-4">
+                                <div class="col-12 mb-3">
+                                            <label for="selectFicha" class="form-label text-dark">Seleccionar Ficha</label>
+                                            <select class="form-select" id="selectFicha">
+                                            <option selected>Seleccionar ficha</option>
+                                            <option value="1">Ficha 1</option>
+                                            <option value="2">Ficha 2</option>
+                                            <option value="3">Ficha 3</option>
+                                        </select>
+                                    </div>
+                                    <!-- primera fila: Espacio grande -->
+                                    
+                                    
+                                    <div class="col-12">
+                                        <!-- Primera fila: Seleccionar ficha -->
+                                        
+                                    <div class="input-group mb-3">
+                                       
+                                        <div class="row">
+                                            
+                                            <input type="text" class="form-control" placeholder="Buscar competencia..." aria-label="Buscar"
+                                            aria-describedby="basic-addon1">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.146 3.146a1 1 0 0 0 1.415-1.415l-3.146-3.146zm-5.742.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                        
+                                    <div class="row mb-5 justify-content-center">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr class="table-success">
+                                                    <th>COMPETENCIA</th>
+                                                    <th>RESULTADOS</th>
+                                                    <th>RESULTADOS DEL APRENDIZ</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>ALGORITMIA</td>
+                                                    <td>Conocer<br>
+                                                        Usar<br>
+                                                        Identificar</td>
+                                                    <td>Ejemplo<br>
+                                                        Ejemplo<br>
+                                                        Ejemplo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>REQUERIMIENTOS</td>
+                                                    <td>Conocer<br>
+                                                        Usar<br>
+                                                        Identificar</td>
+                                                    <td>No cumple<br>
+                                                        Ejemplo<br>
+                                                        Ejemplo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Inglés</td>
+                                                    <td>Conocer<br>
+                                                        Usar<br>
+                                                        Identificar</td>
+                                                    <td>No cumple<br>
+                                                        Ejemplo<br>
+                                                        Ejemplo</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                        
+                                     </div>
+                                    </div>
+                                    <!-- Fila 2: -->
+                                       <div class="bg-white py-5 px-4 rounded-4 shadow">
+                                           <div class="input-group mb-3">
+                                               <input type="text" class="form-control" placeholder="Buscar actividad..." aria-label="Buscar"
+                                               aria-describedby="basic-addon1">
+                                               <span class="input-group-text" id="basic-addon1">
+                                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                                                   viewBox="0 0 16 16">
+                                                   <path
+                                                   d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.146 3.146a1 1 0 0 0 1.415-1.415l-3.146-3.146zm-5.742.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    <div class="row justify-content-center">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr class="table-success">
+                                                    <th>Actividades de la Competencia</th>
+                                                    <th>Estado</th>
+                                                    <th>Calificación</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Consulta de Algoritmos</td>
+                                                    <td>Entregado<br>
+                                                        <td>Aprobado</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>Ejercicio de Practica #1</td>
+                                                    <td>No Entregado<br>
+                                                    <td>No Aprobado<br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ejercicio de Practica #2</td>
+                                                        <td>Pendiente</td>
+                                                        <td>Pendiente</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                        
+                                          
+                                    </div>
+                                </div>
+                                
+                            </div>    
+         </div>
+        
+        <!-- Menú Lateral -->
+        <nav class="menu-lateral bg-light p-3">
+            <div class="text-center mb-4">
+                
+            </div>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="menuCoordi.html" class="btn btn-light w-100 mb-2">Inicio</a>
+                </li>
+                <li>
+                    <a href="fichasInfoc.html" class="btn btn-light w-100 mb-2">Fichas</a>
+                </li>
+                <li>
+                    <a href="notificacionesC.html" class="btn btn-light w-100 mb-2">Notificaciones</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

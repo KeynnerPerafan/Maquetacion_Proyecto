@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../assents/css/Bootstrap/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assents/css/estilosPlantillaBase.css" >
+    <title>Bootstrap Example</title>
+  </head>
+  <body >
+    
+    <!-- Contenedor con fondo degradado -->
+    <div class="fondodepagina">
+      
+      <!-- Contenedor perfil -->
+      <div class="container-md d-flex justify-content-end align-items-center py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" style="color: #98C15D"; class="bi bi-person-circle fs-1" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+      </div>    
+        
+      
+      
+            <!-- Caja de Fichas -->
+     
+           <div class="bg-white py-5 px-4 rounded-4 shadow" style="width: 95%; margin-left: 2.5rem;margin-top :10px; min-height: 70vh;">
+            <!-- Títulos antes del contenedor blanco alineados con el contenedor -->
+                <div class="container-md d-flex align-items-center mb-3" style="width: 70%; margin-left: 2.5rem;margin-top :0px">
+                  <h1 style="color: black; margin-right: 20px;">Asignación de Competencias</h1>
+                  <h2 style="color: #98C15D;">Instructores</h2>
+                </div>
+                <!-- Contenedor de filas y columnas -->
+                <div class="card" style="background-color: #98C15D; border: none; width: 80%; margin-left: 2.5rem; margin-top: 10px; min-height: 90vh;">
+                  <div class="row h-100 p-4">
+      
+      <!-- Primera fila: Competencias -->
+       
+      <div class="card p-3 bg-light">
+        <div class="row align-items-center">
+          <!-- Primera columna: Competencias -->
+          <div class="col-md-4">
+            <h3 class="text-dark">Competencias</h3>
+          </div>
+          <!-- Segunda columna: Seleccionar competencias -->
+          <div class="col-md-8">
+            <select class="form-select" aria-label="Seleccionar competencia">
+              <option selected>Seleccionar una competencia</option>
+              <option value="1">Competencia 1</option>
+              <option value="2">Competencia 2</option>
+              <option value="3">Competencia 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+   
+       <!-- Segunda fila: Espacio grande -->
+       <div class=" bg-white py-5 px-4 rounded-4 shadow" style="width: 98%; margin-left: 0.5rem;margin-top :10px; min-height: 90vh;">
+       <div class="col-12">
+         <div class="row">
+           <!-- Primera fila: Seleccionar ficha -->
+           <div class="col-12 mb-3">
+             <label for="selectFicha" class="form-label text-dark">Seleccionar Ficha</label>
+             <select class="form-select" id="selectFicha">
+               <option selected>Seleccionar ficha</option>
+               <option value="1">Ficha 1</option>
+               <option value="2">Ficha 2</option>
+               <option value="3">Ficha 3</option>
+              </select>
+            </div>
+            
+            <!-- Segunda fila: Seleccionar instructor -->
+            <div class="col-12 mb-3">
+            <label for="selectInstructor" class="form-label text-dark">Seleccionar Instructor</label>
+            <select class="form-select" id="selectInstructor">
+              <option selected>Seleccionar instructor</option>
+              <option value="1">Instructor 1</option>
+              <option value="2">Instructor 2</option>
+              <option value="3">Instructor 3</option>
+            </select>
+          </div>
+
+          <!-- Tercera fila: Subir archivo -->
+          <div class="col-12 mb-3">
+            <label for="uploadFile" class="form-label text-dark">Subir Archivo</label>
+            <input type="file" class="form-control" id="uploadFile">
+          </div>
+
+          <!-- Cuarta fila: Guardar borrador y Publicar -->
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <button type="button" class="btn btn-light w-100">Guardar Borrador</button>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-success w-100">Publicar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<!-- Menú Lateral -->
+<nav class="menu-lateral bg-light p-3">
+  <div class="text-center mb-4">
+    
+  </div>
+  <ul class="list-unstyled">
+    <li>
+      <a href="menuCoordi.html" class="btn btn-light w-100 mb-2">Inicio</a>
+    </li>
+    <li>
+      <a href="fichasInfoc.html" class="btn btn-light w-100 mb-2">Fichas</a>
+    </li>
+    
+    <a href="notificacionesC.html" class="btn btn-light w-100 mb-2">Notificaciones</a>
+  </li>
+</ul>
+</nav>
+</div>
+</div>
+
+<script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

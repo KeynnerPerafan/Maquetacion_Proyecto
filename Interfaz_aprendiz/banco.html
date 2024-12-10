@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniformes Donados</title>
+  <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .container {
+      background-color: #e0e0e0;
+      width: 600px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #004d40;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #d0f0c0;
+    }
+    .request-button {
+      background-color: #4caf50;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .request-button:hover {
+      background-color: #388e3c;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Uniformes Donados</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Talla</th>
+          <th>Tipo de formación</th>
+          <th>Programa</th>
+          <th>Elemento</th>
+          <th>PARA</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>S</td>
+          <td>Técnico</td>
+          <td>Análisis y desarrollo de software</td>
+          <td>Camisa</td>
+          <td>Hombre</td>
+          <td><button class="request-button">Solicitar</button></td>
+        </tr>
+        <tr>
+          <td>M-32</td>
+          <td>Tecnólogo</td>
+          <td>Animación digital</td>
+          <td>Camisa Pantalón</td>
+          <td>Hombre</td>
+          <td><button class="request-button">Solicitar</button></td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td>Tecnólogo</td>
+          <td>Topografía</td>
+          <td>Camisa</td>
+          <td>Mujer</td>
+          <td><button class="request-button">Solicitar</button></td>
+        </tr>
+        <tr>
+          <td>XL</td>
+          <td>Tecnólogo</td>
+          <td>Administración de empresas</td>
+          <td>Camisa</td>
+          <td>Mujer</td>
+          <td><button class="request-button">Solicitar</button></td>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td>Técnico</td>
+          <td>Agropecuario</td>
+          <td>Pantalón</td>
+          <td>Hombre</td>
+          <td><button class="request-button">Solicitar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <nav class="menu-lateral bg-light p-3">
+    <div class="text-center mb-4"></div>
+    <ul class="list-unstyled">
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./asistencia.html';">Asistencia</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./desempeño.html';">Tu Desempeño</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./preguntasFrecuentes.html';">Consultas</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+    </ul>
+  </nav>
+    </div>
+  </div>
+  <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

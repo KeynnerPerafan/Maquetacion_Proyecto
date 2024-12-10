@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body{
+        justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(8, 58, 35), rgba(10, 66, 40, 0.8));
+            width: 1200px;
+            height: 600px;
+    }
+        .card-f {
+            border-radius: 15px;
+            width: 140px;
+            height: 125px;
+            position: absolute;
+            top: 150px;
+        }
+        .p{
+            position: absolute;
+            left: 100px;
+        }
+        .p2{
+            position: absolute;
+            right: 100px;
+        }
+        .p3{
+            position: absolute;
+            right: 200px;
+            top: 300px;
+        }
+        .p4{
+            position: absolute;
+            left: 200px;
+            top: 300px;
+        }
+        .btn-custom {
+            border-radius: 30px;
+        }
+        .header-custom {
+            background-color: #28a745;
+            color: white;
+        }
+        .linea-busqueda{
+            position: absolute;
+            top: 20px;
+        }
+        .margen{
+            position: absolute;
+            top: 60px;
+            margin: 20px;
+        }
+        .card-p{
+            height: 500px;
+            width: 800px;
+        }
+        .menu-lateral {
+            top: 80px; 
+            right: 40px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 15px;
+            position: absolute;
+            width: 150px;
+            height: 500px;
+        }
+        .menu-lateral .btn {
+            position: relative;
+            text-align: center;
+            font-size: 16px;
+        }
+        .tex{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center tex"><h1 class="mb-4">Análisis y Desarrollo de Software 2923603</h1></div>
+            <div class="card mb-4 card-p ">
+                <div class="card-header header-custom text-center"><h3>Ficha</h3></div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-around">
+                        <div class="input-group mt-4 margen">
+                            <input type="text" class="form-control" placeholder="Buscar ficha">
+                            <div class="input-group-append"><button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button></div>
+                        </div>
+                        <button type="button" class="btn-lg btn-ptimary card-f " onclick="location.href='./Refistrar.html';">Registrar Asistencia</button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p" onclick="location.href='./historial_reportes.html';">Historial Reportes</button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p2" onclick="location.href='./historial.html';">Historial de Asistencia</button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p3" onclick="location.href='./aprendices.html';">Aprendices</button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p4" onclick="location.href='./info_reporte.html';">reporte de aprendices</button>
+                    </div>
+                </div>
+            </div>
+                
+            <nav class="menu-lateral bg-light p-3">
+                <div class="text-center mb-4"></div>
+                <ul class="list-unstyled">
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./notificaciones.html';">Notificaciones</button></li>
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./competencia.html';">Competencia</button></li>
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./Gestion_activiadad.html';">Gestionar actividades</button></li>
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./aprendices_riesgo.html';">Aprendices en riesgo</button></li>
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./info.html';">Informacion de la ficha</button></li>
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./lider.html';">Soy lider<br>Empezar ficha</button></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

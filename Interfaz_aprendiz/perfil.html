@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil del Aprendiz</title>
+  <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .profile-card {
+      background-color: #e9f7ef;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .welcome-bar {
+      background-color: #2f855a;
+      border-radius: 20px;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .profile-photo {
+      background-color: #2f855a;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      margin: auto;
+    }
+    .info-item {
+      background-color: #d1f7d6;
+      border-radius: 10px;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .info-item i {
+      font-size: 18px;
+      color: #2f855a;
+    }
+    .edit-btn {
+      background-color: #38a169;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .edit-btn:hover {
+      background-color: #2c7a7b;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <!-- Tarjeta de perfil -->
+    <div class="profile-card mx-auto shadow" style="max-width: 800px;">
+      <!-- Barra de bienvenida -->
+      <div class="welcome-bar">¡Bienvenido al Perfil del Aprendiz!</div>
+
+      <!-- Foto y nombre -->
+      <div class="text-center">
+        <div class="profile-photo">
+          <i class="bi bi-person"></i>
+        </div>
+        <h4 class="mt-2">Daniel Perez</h4>
+      </div>
+
+      <!-- Botón editar -->
+      <div class="text-center mt-3">
+        <button class="edit-btn">Edita tu información aquí <i class="bi bi-chevron-right"></i></button>
+      </div>
+
+      <!-- Información del usuario -->
+      <div class="mt-4">
+        <div class="info-item">
+          <span>Identificación: C.C. 10979294098</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="info-item">
+          <span>Correo electrónico: danielitop@gmail.com</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="info-item">
+          <span>Fecha nacimiento: 24-12-2000 (Edad: 19 años)</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="info-item">
+          <span>Teléfono: 310293732</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="info-item">
+          <span>Programa: ADSO (análisis y desarrollo de software)</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="info-item">
+          <span>Ficha: 2923603</span>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="menu-lateral bg-light p-3">
+    <div class="text-center mb-4"></div>
+    <ul class="list-unstyled">
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./asistencia.html';">Asistencia</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./desempeño.html';">Tu Desempeño</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./preguntasFrecuentes.html';">Consultas</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+    </ul>
+  </nav>
+    </div>
+  </div>
+  <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

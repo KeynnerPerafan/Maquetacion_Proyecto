@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Actividad - Algoritmia</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .menu-vertical .icon {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 120px;
+            padding: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-upload icon"></i>
+        <i class="fas fa-info-circle icon"></i>
+        <i class="fas fa-tasks icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">Crear Actividad - Algoritmia</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="title">Título de la actividad</label>
+                <input type="text" class="form-control" id="title" placeholder="Ingresar título">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción de la actividad</label>
+                <textarea class="form-control" id="description" rows="4" placeholder="Ingresar descripción"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="deadline">Fecha límite</label>
+                <input type="date" class="form-control" id="deadline">
+            </div>
+            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="button" class="btn btn-success">Publicar</button>
+        </form>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

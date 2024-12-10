@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../assents/css/Bootstrap/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(8, 58, 35), rgba(10, 66, 40, 0.8));
+            height: 100vh;
+            margin: 0;
+        }
+        .register-container {
+            background: rgba(0, 128, 1, 0.8);
+            box-shadow: 0px 0px 10px 10px #fff;
+            border-radius: 20px;
+            width: 550px;
+            padding: 20px;
+        }
+        .ancho {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Registro</h2>
+            <form id="registroForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control ancho" id="nombre" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="documento" class="form-label">Número de documento</label>
+                    <input type="text" class="form-control ancho" id="documento" placeholder="Ingresa tu número de documento" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control ancho" id="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control ancho" id="contraseña" placeholder="Crea una contraseña" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary ancho" id="registerButton" disabled>
+                        Registrarse para iniciar sesión
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>    
+
+    <script>
+        const form = document.getElementById('registroForm');
+        const inputs = form.querySelectorAll('input');
+        const registerButton = document.getElementById('registerButton');
+        form.addEventListener('input', () => {const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
+        registerButton.disabled = !allFilled;});
+        form.addEventListener('submit', (event) => {event.preventDefault(); 
+            window.location.href = '../login.html';});
+    </script>
+</body>
+</html>

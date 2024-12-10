@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="../assents/css/Bootstrap/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assents/css/estilos.css">
+        <link rel="stylesheet"
+            href="../assents/css/Bootstrap/bootstrap-datepicker.min.css">
+        <title>Registro de Asistencia del Aprendiz</title>
+        <style>
+            .input-group .form-control {
+                background-color: #CAE6D0;
+            color: #000;
+        }
+        
+        .input-group .input-group-text {
+            background-color: #CAE6D0;
+            border: none;
+        }
+        
+        .perfil-aprendiz {
+            background-color: #CAE6D0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .datepicker table tr td.active.day,
+        .datepicker table tr td.active:hover.day {
+            background-color: #28a745 !important;
+            color: #fff !important;
+        }
+        
+        .datepicker table tr td.red.day {
+            background-color: #dc3545 !important;
+            color: #fff !important;
+        }
+        
+        
+        .menu-vertical .icon {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 120px;
+            padding: 20px;
+        }
+        .calendar {
+            width: 100%;
+        }
+        .day {
+            width: 14.28%;
+            height: 100px;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .header {
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+        .day.green { background-color: #c8e6c9; }
+        .day.yellow { background-color: #fff9c4; }
+        .day.red { background-color: #ffcdd2; }
+        .legend {
+            margin-top: 20px;
+        }
+        .legend .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .legend .color-box {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .color-green { background-color: #c8e6c9; }
+        .color-yellow { background-color: #fff9c4; }
+        .color-red { background-color: #ffcdd2; }
+        </style>
+</head>
+
+<body>
+    <div class="fondodepagina">
+        <div class="container-md d-flex justify-content-end align-items-center py-2">
+            <h1 class="titulo">ASISTENCIA DEL APRENDIZ</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
+                class="bi bi-person-circle fs-1" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+        </div>
+        <div class="bg-white py-5 px-4 rounded-4 shadow"
+        style="width: 70%; margin-left: 2.5rem;margin-top :30px; min-height: 90vh;">
+        
+        <!-- Barra de búsqueda de fechas -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="date-search" placeholder="Selecciona una fecha..."
+            aria-label="Buscar" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.146 3.146a1 1 0 0 0 1.415-1.415l-3.146-3.146zm-5.742.656a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                        </svg>
+                    </span>
+                </div>
+            <button class="btn btn-primary mb-3" id="search-button">Buscar</button>
+            
+            <div class="container my-5">
+                <h1 class="mb-4">Registro de Asistencia</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="datepicker">Selecciona una fecha:</label>
+                            <div class="input-group date" id="datepicker">
+                                <input type="text" class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                            <label>Asistencia:</label>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-success">Asistió</button>
+                                <button type="button" class="btn btn-danger">No Asistió</button>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <div class="menu-vertical">
+                                <i class="fas fa-info-circle icon"></i>
+                                <i class="fas fa-user-circle icon"></i>
+                                <i class="fas fa-bell icon"></i>
+                                <i class="fas fa-home icon"></i>
+                            </div>
+                                <div class="container-content">
+                                    <div class="text-center">
+                                        <h1 class="mb-4">Calendario Mensual de Asistencia</h1>
+                                        </div>
+                                        <div class="calendar mb-4">
+                                <div class="row">
+                                    <div class="col header">Dom</div>
+                                    <div class="col header">Lun</div>
+                                    <div class="col header">Mar</div>
+                                    <div class="col header">Mié</div>
+                                    <div class="col header">Jue</div>
+                                    <div class="col header">Vie</div>
+                                    <div class="col header">Sáb</div>
+                                </div>
+                                    <div class="row">
+                                        <div class="col day" onclick="changeColor(this)">1</div>
+                                        <div class="col day" onclick="changeColor(this)">2</div>
+                                    <div class="col day" onclick="changeColor(this)">3</div>
+                                    <div class="col day" onclick="changeColor(this)">4</div>
+                                    <div class="col day" onclick="changeColor(this)">5</div>
+                                    <div class="col day" onclick="changeColor(this)">6</div>
+                                    <div class="col day" onclick="changeColor(this)">7</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col day" onclick="changeColor(this)">8</div>
+                                    <div class="col day" onclick="changeColor(this)">9</div>
+                                    <div class="col day" onclick="changeColor(this)">10</div>
+                                    <div class="col day" onclick="changeColor(this)">11</div>
+                                    <div class="col day" onclick="changeColor(this)">12</div>
+                                    <div class="col day" onclick="changeColor(this)">13</div>
+                                    <div class="col day" onclick="changeColor(this)">14</div>
+                                </div>
+                                    <div class="row">
+                                        <div class="col day" onclick="changeColor(this)">15</div>
+                                        <div class="col day" onclick="changeColor(this)">16</div>
+                                    <div class="col day" onclick="changeColor(this)">17</div>
+                                    <div class="col day" onclick="changeColor(this)">18</div>
+                                    <div class="col day" onclick="changeColor(this)">19</div>
+                                    <div class="col day" onclick="changeColor(this)">20</div>
+                                    <div class="col day" onclick="changeColor(this)">21</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col day" onclick="changeColor(this)">22</div>
+                                    <div class="col day" onclick="changeColor(this)">23</div>
+                                    <div class="col day" onclick="changeColor(this)">24</div>
+                                    <div class="col day" onclick="changeColor(this)">25</div>
+                                    <div class="col day" onclick="changeColor(this)">26</div>
+                                    <div class="col day" onclick="changeColor(this)">27</div>
+                                    <div class="col day" onclick="changeColor(this)">28</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col day" onclick="changeColor(this)">29</div>
+                                    <div class="col day" onclick="changeColor(this)">30</div>
+                                    <div class="col day" onclick="changeColor(this)">31</div>
+                                    </div>
+                                </div>
+                                    <div class="legend">
+                                    <div class="item">
+                                        <div class="color-box color-green"></div>
+                                    <span>Falta de media jornada</span>
+                                    </div>
+                                    <div class="item">
+                                        <div class="color-box color-yellow"></div>
+                                        <span>Falta de media jornada</span>
+                                        </div>
+                                        <div class="item">
+                                    <div class="color-box color-red"></div>
+                                    <span>Falta de jornada completa</span>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                                    </div>
+                                </div>
+                                    </div>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $('#datepicker').datepicker({
+                        format: 'yyyy-mm-dd',
+                        autoclose: true
+                    });
+
+                    $('#date-search').datepicker({
+                        format: 'yyyy-mm-dd',
+                        autoclose: true
+                    });
+
+                    $('#search-button').click(function () {
+                        var selectedDate = $('#date-search').val();
+                        alert('Fecha seleccionada: ' + selectedDate);
+                        //lógica para buscar según la fecha seleccionada
+                    });
+
+                    // Ejemplo
+                    var attendanceData = {
+                        '2023-05-01': 'present',
+                        '2023-05-02': 'absent',
+                        '2023-05-03': 'present',
+                        '2023-05-04': 'absent',
+                        '2023-05-05': 'present'
+                    };
+                    
+                    $('#attendance-calendar').datepicker({
+                        format: 'yyyy-mm-dd',
+                        autoclose: true,
+                        beforeShowDay: function (date) {
+                            var dateString = $.datepicker.formatDate('yyyy-mm-dd', date);
+                            if (attendanceData[dateString] === 'present') {
+                                return {
+                                    classes: 'active',
+                                    tooltip: 'Asistió'
+                                };
+                            } else if (attendanceData[dateString] === 'absent') {
+                                return {
+                                    classes: 'red',
+                                    tooltip: 'No Asistió'
+                                };
+                            }
+                            return {
+                                tooltip: 'Sin registro'
+                            };
+                        }
+                    });
+                });
+                
+                function changeColor(element) {
+                        if (element.classList.contains('green')) {
+                            element.classList.remove('green');
+                            element.classList.add('yellow');
+                        } else if (element.classList.contains('yellow')) {
+                            element.classList.remove('yellow');
+                            element.classList.add('red');
+                        } else if (element.classList.contains('red')) {
+                            element.classList.remove('red');
+                        } else {
+                            element.classList.add('green');
+                        }
+                    }
+                    </script>
+        </div>
+        <nav class="menu-lateral bg-light p-3">
+            <h5>Grafica de Asistencia</h5>
+            <div class="col-12 col-md-3">
+                <div class="card"
+                style="height: 200px;border: none; display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
+                    <br> <br> <br> <br><br>
+                    <img src="../assents/img/pastel.png" alt="" class="" style="width: 80px; height: 80px; ">
+                    <h6>Asistencia</h6> <br> <br>
+                </div>
+            </div> <br><br><br><br><br>
+            <div class="d-flex justify-content-end mb-3">
+                <a href="menuCoordi.html" class="btn btn-primary">
+                    <i class="bi bi-house-door-fill"></i> Volver a la página principal
+                </a>
+            </div>
+        </nav>
+    </div>
+    <script src="../assents/js/bootstrap.bundle.min.js"></script>
+    <script src="../assents/js/jquery.min.js"></script>
+    <script
+        src="../assents/js/bootstrap-datepicker.min.js"></script>
+</body>
+
+</html>

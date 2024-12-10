@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body{
+        justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(8, 58, 35), rgba(10, 66, 40, 0.8));
+            width: 1200px;
+            height: 600px;
+    }
+        .card-f {
+            border-radius: 15px;
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            top: 150px;
+        }
+        .p{
+            position: absolute;
+            left: 100px;
+        }
+        .p2{
+            position: absolute;
+            right: 100px;
+        }
+        .p3{
+            position: absolute;
+            right: 200px;
+            top: 300px;
+        }
+        .p4{
+            position: absolute;
+            left: 200px;
+            top: 300px;
+        }
+        .btn-custom {
+            border-radius: 30px;
+        }
+        .header-custom {
+            background-color: #28a745;
+            color: white;
+        }
+        .linea-busqueda{
+            position: absolute;
+            top: 20px;
+        }
+        .margen{
+            position: absolute;
+            top: 60px;
+            margin: 20px;
+        }
+        .card-p{
+            height: 500px;
+            width: 800px;
+        }
+        .menu-lateral {
+            top: 80px; 
+            right: 40px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 15px;
+            position: absolute;
+            width: 150px;
+            height: 500px;
+        }
+        .menu-lateral .btn {
+            position: relative;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center"><h1 class="mb-4">¡Bienvenido!</h1></div>
+            <div class="card mb-4 card-p ">
+                <div class="card-header header-custom text-center"><h3>Fichas</h3></div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-around">
+                        <div class="input-group mt-4 margen">
+                            <input type="text" class="form-control" placeholder="Buscar ficha">
+                            <div class="input-group-append"><button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button></div>
+                        </div>
+                        <button type="button" class="btn-lg btn-ptimary card-f " onclick="location.href='./ficha.html';"></button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p" onclick="location.href='./ficha.html';">2923603<br>ADSO</button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p2" onclick="location.href='./ficha.html';">2329604<br>ADSO</button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p3" onclick="location.href='./ficha.html';">2305342<br>ADSO</button>
+                        <button type="button" class="btn-lg btn-ptimary card-f p4" onclick="location.href='./ficha.html';">1505377<br>ADSO</button>
+                    </div>
+                </div>
+            </div>
+                
+            <nav class="menu-lateral bg-light p-3">
+                <div class="text-center mb-4"></div>
+                <ul class="list-unstyled">
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./notificaciones.html';">Notificaciones</button></li>
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./competencia.html';">Competencia</button></li>
+                    <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./lider.html';">Soy lider<br>Empezar ficha</button></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+
+<div class="bg-white py-5 px-4 shadow altura"
+            style="width: 70%; margin-left: 2.5rem;margin-top :30px; min-height: 90vh;">
+            <h1 class="t1 text-uppercase fw-bold">Página de inicio</h1>
+            <div class="row mb-5 justify-content-center">
+                <div class="col-12 col-md-3">
+                    <a href="actividades.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center p">
+                                <div>
+                                    <img src="../assents/img/actividad.png" alt="" class="img">
+                                </div>
+                                <div>
+                                    <p>ACTIVIDADES</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <a href="asistencia.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center text-black p2">
+                                <div><img src="../assents/img/ausencia.png" alt="" class="img"></div>
+                                <div>
+                                    <p>FALTAS POR ASISTENCIA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <a href="registroAsistencia.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center p">
+                                <div><img src="../assents/img/asistemcias.png" alt="" class="img"></div>
+                                <p>Historial deasistencia</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-3">
+                    <a href="desempeño.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center p3">
+                                <div><img src="../assents/img/desarrollo.png" alt="" class="img">
+                                </div>
+                                <div>
+                                    <p>TU DESEMPEÑO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <a href="banco.html">
+                        <div class="card" style="height: 200px;border: none;">
+                            <div class="p-3 text-center p2">
+                                <div>
+                                    <img src="../assents/img/uniforme.png" alt="" class="img">
+                                </div>
+                                <div>
+                                    <p>BANCO DE UNIFORMES</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Dificultades al Estudiar</title>
+    <link rel="stylesheet" href="../assents/css/Bootstrap/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 128, 1, 0.8);
+            box-shadow: 0px 0px 10px 10px #fff;
+            border-radius: 20px;
+            width: 500px;
+            padding: 20px;
+        }
+        .btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .preguntas {
+            background: rgba(99, 148, 99, 0.8);
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .respuesta {
+            text-align: left;
+            color: #fff;
+        }
+        .respuesta label {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Dificultades al Estudiar</h1>
+        <form id="surveyForm" action="./interfaz.html" method="POST">
+            <div class="preguntas">
+                <h3>1. ¿Con qué frecuencia sientes que te resulta difícil concentrarte al estudiar?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p0" value="1"> Siempre</label>
+                    <label><input type="radio" name="p0" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="p0" value="3"> Rara vez</label>
+                    <label><input type="radio" name="p0" value="4"> Nunca</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>2. ¿Sientes que tu motivación para estudiar es baja en algunos momentos?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p1" value="1"> Muy baja</label>
+                    <label><input type="radio" name="p1" value="2"> Baja</label>
+                    <label><input type="radio" name="p1" value="3"> Alta</label>
+                    <label><input type="radio" name="p1" value="4"> Muy alta</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>3. ¿Cuántas horas al día puedes dedicar al estudio de manera constante?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p2" value="1"> Menos de 1 hora</label>
+                    <label><input type="radio" name="p2" value="2"> 1-2 horas</label>
+                    <label><input type="radio" name="p2" value="3"> 2-3 horas</label>
+                    <label><input type="radio" name="p2" value="4"> Más de 3 horas</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>4. ¿Con qué frecuencia te sientes agotado mentalmente al estudiar?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p3" value="1"> Muy frecuentemente</label>
+                    <label><input type="radio" name="p3" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="p3" value="3"> Ocasionalmente</label>
+                    <label><input type="radio" name="p3" value="4"> Rara vez</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>5. ¿Tienes dificultades para organizar tus materiales de estudio?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p4" value="1"> Siempre</label>
+                    <label><input type="radio" name="p4" value="2"> Frecuentemente</label>
+                    <label><input type="radio" name="p4" value="3"> Rara vez</label>
+                    <label><input type="radio" name="p4" value="4"> Nunca</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>6. ¿Qué tan efectivo es tu ambiente de estudio?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p5" value="1"> Muy efectivo</label>
+                    <label><input type="radio" name="p5" value="2"> Moderadamente efectivo</label>
+                    <label><input type="radio" name="p5" value="3"> Poco efectivo</label>
+                    <label><input type="radio" name="p5" value="4"> Nada efectivo</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>7. ¿Cuán frecuente es la procrastinación al momento de estudiar?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p6" value="1"> Muy frecuente</label>
+                    <label><input type="radio" name="p6" value="2"> Frecuente</label>
+                    <label><input type="radio" name="p6" value="3"> Rara vez</label>
+                    <label><input type="radio" name="p6" value="4"> Nunca</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>8. ¿Tienes apoyo de familiares o amigos en tu proceso de estudio?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p7" value="1"> Siempre</label>
+                    <label><input type="radio" name="p7" value="2"> A veces</label>
+                    <label><input type="radio" name="p7" value="3"> Rara vez</label>
+                    <label><input type="radio" name="p7" value="4"> Nunca</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>9. ¿Tienes estrategias de manejo del estrés durante el estudio?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p8" value="1"> Siempre</label>
+                    <label><input type="radio" name="p8" value="2"> A veces</label>
+                    <label><input type="radio" name="p8" value="3"> Rara vez</label>
+                    <label><input type="radio" name="p8" value="4"> Nunca</label>
+                </div>
+            </div>
+            <div class="preguntas">
+                <h3>10. ¿Cómo calificarías tu nivel de satisfacción con tu rendimiento académico?</h3>
+                <div class="respuesta">
+                    <label><input type="radio" name="p9" value="1"> Muy satisfecho</label>
+                    <label><input type="radio" name="p9" value="2"> Satisfecho</label>
+                    <label><input type="radio" name="p9" value="3"> Insatisfecho</label>
+                    <label><input type="radio" name="p9" value="4"> Muy insatisfecho</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success">Enviar Encuesta</button>
+        </form>
+    </div>
+
+    <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

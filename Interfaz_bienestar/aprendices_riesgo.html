@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendices en Riesgo</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+      .ajuste{
+        position: relative;
+      }
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+    </style>
+
+</head>
+<body class="body">
+    <main class="ajuste">
+    <div class="container mt-5 ">
+        <div class="card">
+            <div class="card-header bg-success text-white text-center">
+                <h3>Aprendices en Riesgo</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Nombre Aprendiz</th>
+                            <th>Ficha</th>
+                            <th>Estado Nivel de riesgo</th>
+                            <th>Metodología de prevención</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daniel Perez</td>
+                            <td>2923603</td>
+                            <td class="bg-success text-white">Bajo</td>
+                            <td>Económica</td>
+                        </tr>
+                        <tr>
+                            <td>Valentina Cuaran</td>
+                            <td>2923603</td>
+                            <td class="bg-warning text-white">Moderado</td>
+                            <td>Académica</td>
+                        </tr>
+                        <tr>
+                            <td>Andres Sarria</td>
+                            <td>2923603</td>
+                            <td class="bg-danger text-white">Alto</td>
+                            <td>Académica</td>
+                        </tr>
+                        <tr>
+                            <td>Andres Perafan</td>
+                            <td>2923603</td>
+                            <td class="bg-danger text-white">Crítico</td>
+                            <td>Económica</td>
+                        </tr>
+                        <tr>
+                            <td>Anne Valentina</td>
+                            <td>2923603</td>
+                            <td class="bg-success text-white">Bajo</td>
+                            <td>Disciplinario o social</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <nav class="menu-lateral bg-light p-3">
+        <div class="text-center mb-4"></div>
+        <ul class="list-unstyled">
+            <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+            <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./solicitudes.html';">Solicitudes</button></li>
+            <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./citar_aprendiz.html';">Citar aprendiz</button></li>
+        </ul>
+    </nav>
+    <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

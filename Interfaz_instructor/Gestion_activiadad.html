@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Actividades</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .menu-vertical .icon {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 100px;
+            padding: 20px;
+        }
+        .activity-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .activity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .activity-header h3 {
+            margin: 0;
+        }
+        .activity-status {
+            font-weight: bold;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .status-draft { background-color: #ffc107; }
+        .status-published { background-color: #28a745; }
+        .activity-objectives {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-upload icon"></i>
+        <i class="fas fa-info-circle icon"></i>
+        <i class="fas fa-tasks icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">Algoritmia</h1>
+        </div>
+        <div class="activity-card">
+            <div class="activity-header">
+                <h3>Taller en grupo</h3>
+                <span class="activity-status status-draft">Borrador</span>
+            </div>
+            <p class="activity-objectives">
+                Objetivo 1: Aplicar conceptos a problemas del mundo real.<br>
+                Objetivo 2: Desarrollar habilidades para resolver problemas.<br>
+                Objetivo 3: Trabajar en equipo.<br>
+                Objetivo 4: Profundizar en la comprensión de la materia.
+            </p>
+        </div>
+        <div class="activity-card">
+            <div class="activity-header">
+                <h3>Ejercicios en clase</h3>
+                <span class="activity-status status-published">Publicada</span>
+            </div>
+            <p class="activity-objectives">
+                Objetivo 1: Aplicar conceptos a problemas del mundo real.<br>
+                Objetivo 2: Desarrollar habilidades para resolver problemas.<br>
+                Objetivo 3: Trabajar en equipo.<br>
+                Objetivo 4: Profundizar en la comprensión de la materia.
+            </p>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

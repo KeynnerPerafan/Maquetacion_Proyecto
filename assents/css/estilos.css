@@ -1,0 +1,173 @@
+/* Asegura que el menú lateral esté fijo al lado derecho */
+.fondodepagina {
+    background: linear-gradient(#064E3B, #52E39A);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 180vh; /* Mínimo 100% de la altura visible, pero se expande con el contenido */
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .menu-lateral {
+    width: 150px;
+    min-height: calc(100vh - 50px); /* Resta 20px del alto total para el espacio superior e inferior */
+    position: fixed;
+    top: 80px; /* Espacio desde la parte superior */
+    right: 40px; /* Espacio desde la parte derecha */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 15px; /* Redondea todas las esquinas */
+}
+
+/* Estilo de los botones del menú */
+.menu-lateral .btn {
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Margen derecho para el contenido, para no solaparse con el menú */
+.contenido {
+    margin-right: 200px;
+    margin-left: 0px; /* Espacio para el ancho del menú */
+}
+
+/* Estilo para las cards */
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+
+.menu-lateral {
+    width: 150px;
+    min-height: calc(100vh - 50px);
+    /* Resta 20px del alto total para el espacio superior e inferior */
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.menu-lateral .btn {
+    text-align: left;
+    font-size: 16px;
+}
+
+.contenido {
+    margin-right: 200px;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    flex: 1;
+}
+
+.input-group .form-control {
+    background-color: #CAE6D0;
+    color: #000;
+}
+
+.input-group .input-group-text {
+    background-color: #CAE6D0;
+    border: none;
+}
+
+.perfil-aprendiz {
+    background-color: #CAE6D0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.datepicker table tr td.active.day,
+.datepicker table tr td.active:hover.day {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+.datepicker table tr td.red.day {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.menu-vertical .icon {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.container-content {
+    margin-right: 120px;
+    padding: 20px;
+}
+
+.calendar {
+    width: 100%;
+}
+
+.day {
+    width: 14.28%;
+    height: 100px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.header {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.day.green {
+    background-color: #c8e6c9;
+}
+
+.day.yellow {
+    background-color: #fff9c4;
+}
+
+.day.red {
+    background-color: #ffcdd2;
+}
+
+.legend {
+    margin-top: 20px;
+}
+
+.legend .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend .color-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.color-green {
+    background-color: #c8e6c9;
+}
+
+.color-yellow {
+    background-color: #fff9c4;
+}
+
+.color-red {
+    background-color: #ffcdd2;
+}

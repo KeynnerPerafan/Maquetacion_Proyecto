@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificaciones</title>
+  <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      padding: 15px;
+    }
+
+    h1 {
+      background-color: rgb(17, 117, 91);
+      color: white;
+      border-radius: 30px;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      top: -10px;
+    }
+
+    .activity-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 5px 10px 5px rgb(148, 148, 148);
+      background-color: white;
+    }
+
+    .details {
+      display: none;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      box-shadow: 5px 10px 5px rgb(148, 148, 148);
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    .details .detail-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .details .icon {
+      width: 30px;
+      height: 30px;
+      background-color: #007bff;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Notificaciones</h1>
+    
+    
+<!-- Contenedor principal -->
+    <div class="menu">
+      <!-- Notificación 1 -->
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center"><span>Actividad 3/12/24</span></div>
+        <div class="card-body bg-light">
+          <p><strong>Solicitud de acompañamiento:</strong> Hay una nueva Solicitud de acompañamiento</p>
+          <p><strong>Descripción:</strong> Un aprendiz a solicitao acompañamiento, cita fue solicitada para el dia 12/12/2025 las 4:0p.m.</p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center"><span>Citacion a Comite</span></div>
+        <div class="card-body bg-light">
+          <p><strong>Aprendices postulados:</strong> 5/30 aprendices se han postulado a la convocatorias de sostenimiento de transporte</p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center"><span>Nueva Convocatoria</span></div>
+        <div class="card-body bg-light">
+          <p><strong>Donacion:</strong> Un aprendiz ha enviado un formulario de donacin </p>
+          <p><strong>Descripción:</strong> El día 10/12/2024 un aprendiz decidio donar un uniforme.</p>
+        </div>
+      </div>
+
+    <nav class="menu-lateral bg-light p-3">
+      <div class="text-center mb-4"></div>
+      <ul class="list-unstyled">
+        <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+      </ul>
+    </nav>
+      </div>
+    </div>
+    <script src="../assents/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

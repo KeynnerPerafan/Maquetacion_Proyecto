@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Desempeño</title>
+  <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+    .caja{
+      position: absolute;
+      background-color: white;
+      width: 940px;
+      height: auto;
+      border-radius: 20px 80px 20px 20px;
+      left: 30px;
+    }
+    .grafica{
+      position: absolute;
+      right: 10px;
+      top: 100px;
+    }
+    .grafica2{
+      position: absolute;
+      right: 10px;
+      top: 300px;
+    }
+    .h1{
+      position: absolute;
+      top: 20px;
+      font-size: 40px;
+      background-color: rgb(17, 117, 91);
+      width: 600px;
+      text-align: center;
+      border-radius: 40px;
+      color: white;
+    }
+  </style>
+</head>
+
+  <body>
+    <h1 class="h1">Tu Desempeño</h1>
+    <div class="caja">
+      <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+        </div>
+    
+        <div class="row">
+          <!-- Información del aprendiz -->
+          <div class="col-md-9">
+            <h2 class="h5 text-success">Desempeño del aprendiz</h2>
+            <div class="mb-3">
+              <p><strong>Nombre:</strong> Pepito Perez</p>
+              <p><strong>ID estudiante:</strong> 123456</p>
+              <p><strong>Programa:</strong> Análisis y desarrollo de software</p>
+            </div>
+            <h3 class="h6">Desempeño</h3>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Calificación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Matemáticas</td>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <td>Programación</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>Redes</td>
+                  <td>79</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+    <!-- Gráfico -->
+    <div class="col-md-3 grafica">
+      <h3 class="h6 text-success">Gráfico desempeño</h3>
+      <img src="https://via.placeholder.com/150" alt="Gráfico de desempeño" class="img-fluid">
+    </div>
+    <div class="col-md-3 grafica2">
+      <h3 class="h6 text-success">Gráfico desempeño</h3>
+      <img src="https://via.placeholder.com/150" alt="Gráfico de desempeño" class="img-fluid">
+    </div>
+    <nav class="menu-lateral bg-light p-3">
+      <div class="text-center mb-4"></div>
+      <ul class="list-unstyled">
+        <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./registroAsistencia.html';">Historial de asistencia</button></li>
+        <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./asistencia.html';">Asistencia</button></li>
+        <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./preguntasFrecuentes.html';">Consultas</button></li>
+        <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+      </ul>
+    </nav>
+  <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

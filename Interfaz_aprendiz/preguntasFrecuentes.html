@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="../assents/css/Bootstrap/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #e0e0e0;
+      width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #004d40;
+    }
+    .search-bar {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+    .search-bar button {
+      padding: 10px;
+      border: none;
+      background-color: rgb(148, 148, 148);
+      color: white;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: rgb(148, 148, 148);
+    }
+    .content-box {
+      background-color: rgb(148, 148, 148);
+      height: 150px;
+      border-radius: 5px;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+    
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">¡Bienvenido al sistema de preguntas más frecuentes!</div>
+    <div class="search-bar">
+      <input type="text" placeholder="¿Cómo hago el proceso de retiro voluntario?">
+      <button>🔍</button>
+    </div>
+    <div class="content-box"></div>
+  </div>
+
+  <nav class="menu-lateral bg-light p-3">
+    <div class="text-center mb-4"></div>
+    <ul class="list-unstyled">
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./asistencia.html';">Asistencia</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./desempeño.html';">Tu Desempeño</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./notificaciones.html';">Notificaciones</button></li>
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+    </ul>
+  </nav>
+    </div>
+  </div>
+  <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>

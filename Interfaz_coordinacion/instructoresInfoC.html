@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="../assents/css/Bootstrap/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assents/css/estilosPlantillaBase.css">
+        <title>Competencias</title>
+        <style>
+          .hidden {
+            display: none;
+          }
+        </style>
+  <body >
+    
+       <!-- Contenedor con fondo degradado -->
+    <div class="fondodepagina">
+        
+        <!-- Contenedor perfil -->
+    <div class="container-md d-flex justify-content-end align-items-center py-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" style="color: #98C15D"; class="bi bi-person-circle fs-1" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+      </div>    
+      
+      
+      
+      <!-- Caja de Fichas -->
+      
+      <div class="bg-white py-5 px-4 rounded-4 shadow" style="width: 95%; margin-left: 2.5rem;margin-top :10px; min-height: 70vh;">
+        <!-- Títulos antes del contenedor blanco alineados con el contenedor -->
+        <div class="container-md d-flex align-items-center mb-3" style="width: 70%; margin-left: 2.5rem;margin-top :0px">
+          <h1 style="color: black; margin-right: 20px;">Información </h1>
+                    <h2 style="color: #98C15D;">Instructores</h2>
+                </div>
+                     <!-- Contenedor de filas y columnas -->
+                     <div class="card" style="background-color: #98C15D; border: none; width: 80%; margin-left: 2.5rem; margin-top: 10px; min-height: 90vh;">
+                       <div class="row h-100 p-4">
+                         
+      <!-- Primera fila: Competencias -->
+       
+      <div class="card p-3 bg-light">
+        <div class="row align-items-center">
+          <!-- Primera columna: Competencias -->
+          <div class="col-md-4">
+            <h3 class="text-dark">Competencia</h3>
+          </div>
+          <!-- Segunda columna: Seleccionar competencias -->
+          <div class="col-md-8">
+            <select id="competenciasSelect" class="form-select">
+                <option value="">Seleccionar una competencia</option>
+                <option value="algoritmia">Algoritmia</option>
+                <option value="otra">Otra</option>
+              </select>
+            </div>
+          </div>
+        </div>
+     
+        <!-- Contenedores de nombres -->
+        <div id="nombresContainer" class="mt-4 hidden">
+          <div class="card mb-3 p-3 bg-light">
+            <p onclick="toggleInfo(this, 'Jeferson Muñoz')">Jeferson Muñoz</p>
+            <div class="info hidden p-2 bg-light border rounded">
+              <strong>Información de Jeferson Muñoz:</strong>
+              <div class="details">
+                <p>Identificación: C.C. 1025483695</p>
+                <p>Fecha de nacimiento: 05-14-1995</p>
+                    <p>Edad: 29 años</p>
+                    <p>Teléfono: 3204567890</p>
+                    <p>Correo electrónico: jefer.m@example.com</p>
+                    <p>Especialización: Inteligencia Artificial - Machine Learning</p>
+                    <p>Ficha: No líder</p>
+                    <p>Tipo de contrato: Contrato a término indefinido</p>
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="card mb-3 p-3 bg-light">
+              <p onclick="toggleInfo(this, 'María López')">María López</p>
+              <div class="info hidden p-2 bg-light border rounded">
+                <strong>Información de María López:</strong>
+                <div class="details">
+                    <p><strong>Identificación:</strong> C.C. 1097624068</p>
+                    <p><strong>Fecha de nacimiento:</strong> 10-28-2000</p>
+                    <p><strong>Edad:</strong> 24 años</p>
+                    <p><strong>Teléfono:</strong> 3008392002</p>
+                    <p><strong>Correo electrónico:</strong> ejemplo@gmail.com</p>
+                    <p><strong>Especialización:</strong> Algoritmia - Base de datos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3 p-3 bg-light">
+              <p onclick="toggleInfo(this, 'Carlos García')">Carlos García</p>
+              <div class="info hidden p-2 bg-light border rounded">
+                <strong>Información de Carlos García:</strong>
+                <p>Carlos es un instructor de bases de datos con amplios conocimientos en SQL.</p>
+              </div>
+            </div>
+            <div class="card mb-3 p-3 bg-light">
+              <p onclick="toggleInfo(this, 'Ana Torres')">Ana Torres</p>
+              <div class="info hidden p-2 bg-light border rounded">
+                <strong>Información de Ana Torres:</strong>
+                <p>Ana es una experta en inteligencia artificial y aprendizaje automático.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  
+  <!-- Menú Lateral -->
+  <nav class="menu-lateral bg-light p-3">
+    <div class="text-center mb-4">
+      
+    </div>
+    <ul class="list-unstyled">
+      <li>
+        <a href="menuCoordi.html" class="btn btn-light w-100 mb-2">Inicio</a>
+      </li>
+      <li>
+                    <a href="agregarFichas.html" class="btn btn-light w-100 mb-2">Agregar ficha</a>
+                </li>
+                    <a href="asistenciaHistorial.html" class="btn btn-light w-100 mb-2">Historial de asistencia</a>
+                  </li>
+                <li>
+                  <a href="notificacionesC.html" class="btn btn-light w-100 mb-2">Notificaciones</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+        <script>
+          const competenciasSelect = document.getElementById("competenciasSelect");
+          const nombresContainer = document.getElementById("nombresContainer");
+  
+          competenciasSelect.addEventListener("change", function() {
+            if (competenciasSelect.value === "algoritmia") {
+              nombresContainer.classList.remove("hidden");
+            } else {
+              nombresContainer.classList.add("hidden");
+            }
+          });
+          
+          function toggleInfo(element, nombre) {
+            const info = element.nextElementSibling;
+            if (info.classList.contains("hidden")) {
+              info.classList.remove("hidden");
+            } else {
+              info.classList.add("hidden");
+            }
+          }
+          </script>
+          <script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

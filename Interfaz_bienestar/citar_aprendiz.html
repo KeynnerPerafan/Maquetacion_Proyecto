@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear o Modificar Citación</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <body class="body">
+        <main>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-success text-white text-center">
+                <h3>Citaciones Crear o Modificar</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="fechaDireccion">Fecha Dirección</label>
+                        <input type="date" class="form-control" id="fechaDireccion">
+                    </div>
+                    <div class="form-group">
+                        <label for="titulo">Título</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Título">
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea class="form-control" id="descripcion" rows="3" placeholder="Descripción"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar Borrador</button>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+        <nav class="menu-lateral bg-light p-3">
+            <div class="text-center mb-4"></div>
+            <ul class="list-unstyled">
+                <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+                <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./solicitudes.html';">Solicitudes</button></li>
+            </ul>
+        </nav>
+        <script src="../assents/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

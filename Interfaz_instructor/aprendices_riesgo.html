@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendices</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .menu-vertical .icon {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 120px;
+            padding: 20px;
+        }
+        .table {
+            margin-top: 20px;
+        }
+        .status-icon {
+            font-size: 1rem;
+            padding: 5px;
+        }
+        .status-icon.green { color: green; }
+        .status-icon.yellow { color: yellow; }
+        .status-icon.red { color: red; }
+    </style>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-calendar-alt icon"></i>
+        <i class="fas fa-info-circle icon"></i>
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-home icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">Aprendices</h1>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Reporte</th>
+                    <th>Estado</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daryell Sanchez Campo</td>
+                    <td>18/09/24</td>
+                    <td><i class="fas fa-circle status-icon red"></i></td>
+                    <td><i class="fas fa-circle status-icon green"></i></td>
+                    <td>Manual</td>
+                </tr>
+                <tr>
+                    <td>Valentina Cuaran Díaz</td>
+                    <td>16/09/24</td>
+                    <td><i class="fas fa-circle status-icon red"></i></td>
+                    <td><i class="fas fa-circle status-icon yellow"></i></td>
+                    <td>Manual</td>
+                </tr>
+                <tr>
+                    <td>Andres Sarria Nerry</td>
+                    <td>14/09/24</td>
+                    <td><i class="fas fa-circle status-icon green"></i></td>
+                    <td><i class="fas fa-circle status-icon red"></i></td>
+                    <td>Manual</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

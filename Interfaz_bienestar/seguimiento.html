@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento y Citación</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgb(6, 78, 59), rgb(82, 227, 154));
+      min-height: 100vh;
+      margin: 10px;
+      padding: 10px;
+    }
+    .menu-lateral {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      background-color: #d3d3d3;
+      border-radius: 15px;
+      width: 150px;
+      height: 500px;
+      padding: 10px;
+    }
+
+    .menu-lateral .btn {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgb(148, 148, 148);
+      border-style: outset;
+      position: relative;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-lateral {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        box-shadow: none;
+        transform: none;
+      }
+
+      .menu-lateral .btn {
+        height: auto;
+        font-size: 14px;
+      }
+    }
+</style>
+    <body class="body">
+        <main>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-success text-white text-center">
+                <h3>Seguimiento y Citación</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Aprendiz en riesgo</th>
+                            <th>Ficha</th>
+                            <th>Tipo</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daniel Perez</td>
+                            <td>29236003</td>
+                            <td>Económica</td>
+                            <td>En Progreso: 75%</td>
+                            <td><button class="btn btn-success">Crear citación</button></td>
+                        </tr>
+                        <tr>
+                            <td>Andres Sarria</td>
+                            <td>29236003</td>
+                            <td>Económica</td>
+                            <td>En Progreso: 10%</td>
+                            <td><button class="btn btn-success">Crear citación</button></td>
+                        </tr>
+                        <tr>
+                            <td>Cristian Muños</td>
+                            <td>29236003</td>
+                            <td>Disciplinaria</td>
+                            <td>En Progreso: 80%</td>
+                            <td><button class="btn btn-success">Crear citación</button></td>
+                        </tr>
+                        <tr>
+                            <td>Andres Perafan</td>
+                            <td>29236003</td>
+                            <td>Académica</td>
+                            <td>En Progreso: 30%</td>
+                            <td><button class="btn btn-success">Crear citación</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sebastian Tula</td>
+                            <td>29236003</td>
+                            <td>Académica</td>
+                            <td>En Progreso: 30%</td>
+                            <td><button class="btn btn-success">Crear citación</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<nav class="menu-lateral bg-light p-3">
+    <div class="text-center mb-4"></div>
+    <ul class="list-unstyled">
+      <li><button type="button" class="btn btn-light w-100 mb-2" onclick="location.href='./interfaz.html';">Inicio</button></li>
+    </ul>
+  </nav>
+<script src="../assents/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

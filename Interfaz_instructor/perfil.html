@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Instructor</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            z-index: 1;
+        }
+        .menu-vertical .icon {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 120px;
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .profile-card .info {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-history icon"></i>
+        <i class="fas fa-user-check icon"></i>
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-home icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">BIENVENIDO!!</h1>
+        </div>
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/100" alt="Instructor">
+            <div class="info">
+                <h2>Jeferson Muñoz</h2>
+                <p>Instructor</p>
+                <button class="btn btn-light">Editar tu información aquí</button>
+            </div>
+            <div class="details">
+                <p><strong>Identificación:</strong> C.C. 1097624068</p>
+                <p><strong>Fecha de nacimiento:</strong> 10-28-2000</p>
+                <p><strong>Edad:</strong> 24 años</p>
+                <p><strong>Teléfono:</strong> 3008392002</p>
+                <p><strong>Correo electrónico:</strong> ejemplo@gmail.com</p>
+                <p><strong>Especialización:</strong> Algoritmia - Base de datos</p>
+            </div>
+        </div>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

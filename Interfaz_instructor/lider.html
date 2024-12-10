@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignación de Competencias Instructores</title>
+    <link href="../assents/css/Bootstrap/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-vertical {
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 80px;
+            background-color: #28a745;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .menu-vertical .icon {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+        .container-content {
+            margin-right: 120px;
+            padding: 20px;
+        }
+        .btn-custom {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-vertical">
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-list icon"></i>
+        <i class="fas fa-home icon"></i>
+    </div>
+    <div class="container-content">
+        <div class="text-center">
+            <h1 class="mb-4">Asignación de Competencias Instructores</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="competencia">Competencia</label>
+                <select class="form-control" id="competencia">
+                    <option>Algoritmia</option>
+                    <!-- Agregar más opciones aquí si es necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ficha">Seleccionar ficha</label>
+                <select class="form-control" id="ficha">
+                    <!-- Opciones de fichas -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="instructor">Seleccionar instructor</label>
+                <select class="form-control" id="instructor">
+                    <!-- Opciones de instructores -->
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-custom">Subir archivo</button>
+            <div class="text-right">
+                <button type="button" class="btn btn-secondary btn-custom">Guardar borrador</button>
+                <button type="button" class="btn btn-success btn-custom">Publicar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../assents/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assents/js/popper.min.js"></script>
+    <script src="../assents/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
