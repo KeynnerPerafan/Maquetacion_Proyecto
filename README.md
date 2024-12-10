@@ -1,0 +1,6 @@
+1. Interfaz_aprendiz (Sebastian Tulandy y Cristian Muñoz)
+2. Interfaz_bienestar (Keynner Perafan y Danyeli Sanchez)
+3. Interfaz_coordinacion (Anne Narvaez y Valentina Cuaran)
+4. Interfaz_instructor (Daniel Perez y Andres Sarria)
+5. sistema (Ivan Alejandro Mellizo)
+6. Login (Daniel Perez)
